@@ -8,7 +8,6 @@ COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
 
 COPY server.js ./
-COPY ecosystem.config.js ./
 COPY upload.html ./
 COPY public ./public
 
